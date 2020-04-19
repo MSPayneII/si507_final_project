@@ -9,6 +9,8 @@ import requests
 import json
 import secrets # file that contains your API key
 
+"Work in progress"
+
 CACHE_FILENAME = "cache.json"
 CACHE_DICT = {}
 BASE_URL = "https://www.nps.gov/nr/travel/underground/states.htm"
@@ -33,7 +35,7 @@ def save_cache(cache_dict):
 
 
 def make_url_request_using_cache(url, cache):
-    '''Check the cache for a saved result for a National Site. If the result
+    '''Check the cache for a saved result for a Site. If the result
     is found, return it. Otherwise send a new request, save it, then return it.
 
     Parameters
