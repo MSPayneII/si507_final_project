@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8"/>
+    <title>HTML Forms Demo</title>
+</head>
+
+
+<body>
+    <h1>Welcome to the Underground Railroad Site Browser!</h1>
+
+    <form action='/results' method='POST'>
+    <p>
+    Sort by: <br/>
+        <input type='radio' name='sort'
+                value='State' checked='checked'/> State <br/>
+        <input type='radio' name='sort'
+                value='Site'/> Site <br/>
+    </p>
+
+    <p>
+    Sort direction: <br/>
+        <input type='radio' name='dir'
+            value='asc' checked='checked'/>Top to Bottom<br/>
+        <input type='radio' name='dir'
+            value='desc'/>Bottom to Top<br/>
+    </p>
+
+    <p>
+    Filter by State: <br/>
+        <select name='place'>
+            <option value='All'>All states</option>
+            <option value='kansas'>Kansas</option>
+            <option value='iowa'>Iowa</option>
+            <option value='wisconsin'>Wisconsin</option>
+            <option value='illinois'>Illinois</option>
+            <option value='michigan'>Michigan</option>
+            <option value='indiana'>Indiana</option>
+            <option value='ohio'>Ohio</option>
+            <option value='pennsylvania'>Pennsylvania</option>
+            <option value='new york'>New York</option>
+            <option value='vermont'>Vermont</option>
+            <option value='maine'>Maine</option>
+            <option value='massachusetts'>Massachusetts</option>
+            <option value='connecticut'>Connecticut</option>
+            <option value='new jersey'>New Jersey</option>
+            <option value='delaware'>Delaware</option>
+            <option value='district of columbia'>District of Columbia</option>
+            <option value='maryland'>Maryland</option>
+            <option value='virginia'>Virginia</option>
+            <option value='west virginia'>West Virginia</option>
+            <option value='florida'>Florida</option>
+            <option value='colorado'>Colorado</option>
+        </select>
+      </p>
+
+    <input type='submit' value='Get Sites'/>
+
+    </form>
+
+</body>
+
+</html>

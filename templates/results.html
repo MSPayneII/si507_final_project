@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+
+  </style>
+
+
+  </head>
+  <body>
+    <h1>Underground Railroad Sites: Results</h1>
+
+      <p>
+        Your results are....
+      </p>
+
+      <table>
+        <tr>
+          <th>State</th>
+          <th>Site</th>
+          <th>Site URL</th>
+          <th>Location</th>
+          <th>Description</th>
+          <th>Image</th>
+        </tr>
+
+        {% for site in results %}
+        <tr>
+            <td>{{site[1]}}</td>
+            <td>{{site[2]}}</td>
+            <td><a href="{{site3}}">{{site[3]}}</a></td>
+            <td>{{site[4]}}</td>
+            <td>{{site[5]}}</td>
+          <td><img src="https://www.nps.gov/nr/travel/underground/{{site[6]}}" alt="Site Image" width="200" height="200"></td>
+        </tr>
+
+        {%endfor%}
+      </table>
+
+    </body>
+</html>
